@@ -40,8 +40,10 @@ public class MainActivity extends AppCompatActivity {
            int max = Integer.parseInt(TxtNumMax.getText().toString());
            if (min>max){
                TxtNumMax.setBackgroundColor(Color.RED);//判断为空设置红色背景
-               textResult.setText("会不会数数?大小分不清?");
-           }else {
+               textResult.setText("会不会数数?大小分不清?"); }
+           else {
+               TxtNumMax.setBackgroundColor(Color.TRANSPARENT);
+               TxtNumMin.setBackgroundColor(Color.TRANSPARENT);
                Random random = new Random();
                int num = random.nextInt(max) % (max - min + 1) + min;
                textResult.setText(String.valueOf(num));//输出,注意转换类型
