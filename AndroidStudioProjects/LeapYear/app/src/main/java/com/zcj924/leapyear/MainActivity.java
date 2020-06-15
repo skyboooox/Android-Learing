@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 textViewResult.setText("闰年");
             } else {
                 editTextYear.setBackgroundColor(Color.TRANSPARENT);
-                textViewResult.setText("不是闰年");
+                textViewResult.setText("平年");
             }
         }
     }

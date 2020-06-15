@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnInfo_Click"
+        android:text="看看是咋便宜的" />
+
     <EditText
         android:id="@+id/TxtOriginPrice"
         android:layout_width="match_parent"
